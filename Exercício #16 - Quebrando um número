@@ -1,0 +1,20 @@
+# Crie um programa que leia um número Real qualquer pelo
+# teclado e mostre na tela a sua porção inteira.
+
+# Há no mínimo duas maneira de fazer esse programa:
+
+# Um delas é importando a biblioteca math:
+
+from math import trunc
+
+número = float(input('Digite um número: '))
+print('O número digitado foi {} e a sua porção inteira é {}'.format(número, trunc(número)))
+
+
+# A outra maneira não precisa importa essa biblioteca, basta chamar a função int:
+
+número = float(input('Digite um número: '))
+print('O número digitado foi {} e a sua porção inteira é {}'.format(número, int(número)))
+
+
+
