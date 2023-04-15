@@ -1,0 +1,21 @@
+'''Crie um programa que leia o nome completo de uma pessoa e
+mostre:
+O nome com todoas as letras maiúsculas e minúsculas.
+Quantas letras ao todo (sem considerar os espaços).
+Quantas letras tem o primeiro nome.'''
+
+nome = str(input('Digite seu nome completo: ')).strip()
+print('Analisando seu nome...')
+print('Seu nome em maiúsculas é {}'.format(nome.upper()))
+print('Seu nome em minúsculas é {}'.format(nome.lower()))
+print('Seu nome tem ao todo {} letras'.format(len(nome) - nome.count(' ')))
+print('Seu primeiro nome tem {} letras'.format(nome.find(' ')))
+# O método.find() irá procurar o primeiro espaço da string.
+# No caso se o nome for Tony Leal, o primeiro espaço estará no índice 4.
+# Então mostrará que o primeiro nome tem 4 letras, já que subtrai 1 índice.
+
+separa = nome.split()
+print('Seu primeiro nome é {} e ele tem {} letras.'.format(separa[0], len(separa[0])))
+# O método .split() pega toda a string e colocar cada conjunto de caractere
+# dentro de uma lista. Cada ítem da lista será determinado por cada espaço dentro
+# da estring.
